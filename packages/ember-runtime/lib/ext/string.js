@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.extensions
 */
 
 import { ENV } from 'ember-environment';
@@ -23,7 +22,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.fmt](/api/classes/Ember.String.html#method_fmt).
 
     @method fmt
-    @for String
+    @for @ember.extensions.string
     @private
     @deprecated
   */
@@ -35,7 +34,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.w](/api/classes/Ember.String.html#method_w).
 
     @method w
-    @for String
+    @for @ember.extensions.string
     @private
   */
   StringPrototype.w = function () {
@@ -46,7 +45,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.loc](/api/classes/Ember.String.html#method_loc).
 
     @method loc
-    @for String
+    @for @ember.extensions.string
     @private
   */
   StringPrototype.loc = function (...args) {
@@ -57,7 +56,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.camelize](/api/classes/Ember.String.html#method_camelize).
 
     @method camelize
-    @for String
+    @for @ember.extensions.string
     @private
   */
   StringPrototype.camelize = function () {
@@ -68,7 +67,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.decamelize](/api/classes/Ember.String.html#method_decamelize).
 
     @method decamelize
-    @for String
+    @for @ember.extensions.string
     @private
   */
   StringPrototype.decamelize = function () {
@@ -79,7 +78,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.dasherize](/api/classes/Ember.String.html#method_dasherize).
 
     @method dasherize
-    @for String
+    @for @ember.extensions.string
     @private
   */
   StringPrototype.dasherize = function () {
@@ -90,7 +89,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.underscore](/api/classes/Ember.String.html#method_underscore).
 
     @method underscore
-    @for String
+    @for @ember.extensions.string
     @private
   */
   StringPrototype.underscore = function () {
@@ -101,7 +100,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.classify](/api/classes/Ember.String.html#method_classify).
 
     @method classify
-    @for String
+    @for @ember.extensions.string
     @private
   */
   StringPrototype.classify = function () {
@@ -112,7 +111,7 @@ if (ENV.EXTEND_PROTOTYPES.String) {
     See [Ember.String.capitalize](/api/classes/Ember.String.html#method_capitalize).
 
     @method capitalize
-    @for String
+    @for @ember.extensions.string
     @private
   */
   StringPrototype.capitalize = function () {

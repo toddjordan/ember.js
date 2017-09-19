@@ -1,7 +1,6 @@
 /**
-@module ember
-@submodule ember-runtime
-*/
+ * @module @ember.array
+ */
 
 // ..........................................................
 // HELPERS
@@ -206,8 +205,8 @@ export function isEmberArray(obj) {
   Note that the Ember.Array mixin also incorporates the `Ember.Enumerable`
   mixin. All `Ember.Array`-like objects are also enumerable.
 
-  @class Array
-  @namespace Ember
+  @class array
+  @namespace @ember
   @uses Ember.Enumerable
   @since Ember 0.9.0
   @public

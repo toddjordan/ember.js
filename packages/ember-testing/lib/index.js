@@ -10,6 +10,5 @@ import './helpers';      // adds helpers to helpers object in Test
 import './initializers'; // to setup initializer
 
 /**
-  @module ember
-  @submodule ember-testing
+@module @ember.testing
 */

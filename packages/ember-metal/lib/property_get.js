@@ -1,6 +1,3 @@
-/**
-@module ember-metal
-*/
 
 import { assert } from 'ember-debug';
 import { isPath } from './path_cache';
@@ -40,8 +37,11 @@ const ALLOWABLE_TYPES = {
   Note that if the object itself is `undefined`, this method will throw
   an error.
 
+  @module @ember.object
   @method get
-  @for Ember
+  @for object
+  @namespace @ember
+  @static
   @param {Object} obj The object to retrieve from.
   @param {String} keyName The property key to retrieve
   @return {Object} the property value or `null`.
@@ -99,9 +99,11 @@ function isGettable(obj) {
   ```javascript
   Ember.getWithDefault(person, 'lastName', 'Doe');
   ```
-
+  @module @ember.application
   @method getWithDefault
-  @for Ember
+  @for application
+  @namespace @ember
+  @static
   @param {Object} obj The object to retrieve from.
   @param {String} keyName The name of the property to retrieve
   @param {Object} defaultValue The value to return if the property value is undefined

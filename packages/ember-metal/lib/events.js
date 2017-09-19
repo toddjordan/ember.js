@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-metal
+@module @ember.object
 */
 import { applyStr } from 'ember-utils';
 import { deprecate, assert } from 'ember-debug';
@@ -29,7 +28,8 @@ import { ONCE, SUSPENDED } from './meta_listeners';
   Add an event listener
 
   @method addListener
-  @for Ember
+  @for @ember.object.events
+  @static
   @param obj
   @param {String} eventName
   @param {Object|Function} target A target object or a function
@@ -73,7 +73,7 @@ export function addListener(obj, eventName, target, method, once) {
   Arguments should match those passed to `Ember.addListener`.
 
   @method removeListener
-  @for Ember
+  @for @ember.object.events
   @param obj
   @param {String} eventName
   @param {Object|Function} target A target object or a function
@@ -102,8 +102,8 @@ export function removeListener(obj, eventName, target, method) {
   setting that property.
 
   @method suspendListener
-  @for Ember
-
+  @for @ember.object.events
+  @static
   @private
   @param obj
   @param {String} eventName
@@ -119,8 +119,8 @@ export function suspendListener(obj, eventName, target, method, callback) {
   Suspends multiple listeners during a callback.
 
   @method suspendListeners
-  @for Ember
-
+  @for @ember.object.events
+  @static
   @private
   @param obj
   @param {Array} eventNames Array of event names
@@ -141,7 +141,8 @@ export function suspendListeners(obj, eventNames, target, method, callback) {
 
   @private
   @method watchedEvents
-  @for Ember
+  @for @ember.object.events
+  @static
   @param obj
 */
 export function watchedEvents(obj) {
@@ -156,7 +157,8 @@ export function watchedEvents(obj) {
   is not passed, the actions stored on the passed object are invoked.
 
   @method sendEvent
-  @for Ember
+  @for @ember.object.events
+  @static
   @param obj
   @param {String} eventName
   @param {Array} params Optional parameters for each listener.
@@ -204,7 +206,8 @@ export function sendEvent(obj, eventName, params, actions, _meta) {
 /**
   @private
   @method hasListeners
-  @for Ember
+  @for @ember.object.events
+  @static
   @param obj
   @param {String} eventName
 */
@@ -218,7 +221,8 @@ export function hasListeners(obj, eventName) {
 /**
   @private
   @method listenersFor
-  @for Ember
+  @for @ember.object.events
+  @static
   @param obj
   @param {String} eventName
 */
@@ -256,7 +260,8 @@ export function listenersFor(obj, eventName) {
  ```
 
   @method on
-  @for Ember
+  @for @ember.object.events
+  @static
   @param {String} eventNames*
   @param {Function} func
   @return func

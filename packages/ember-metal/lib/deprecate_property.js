@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-metal
+@module @ember.object
 */
 
 import { deprecate } from 'ember-debug';

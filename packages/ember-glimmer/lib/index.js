@@ -70,9 +70,8 @@
   Ember components represent state to the UI of an application. Further
   reading on components can be found under [Ember.Component](/api/classes/Ember.Component.html).
 
-  @module ember
-  @submodule ember-glimmer
-  @main ember-glimmer
+  @module @ember.component
+  @main @ember.component
   @public
  */
 
@@ -104,7 +103,7 @@
   the first part of the property path, `foo`. Instead, use `{{#with foo.bar as |baz|}}`.
 
   @method with
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @param {Object} options
   @return {String} HTML string
   @public
@@ -165,7 +164,7 @@
   </label>
   ```
   @method yield
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @param {Hash} options
   @return {String} HTML string
   @public
@@ -210,7 +209,7 @@
   ```
 
   @method debugger
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @public
  */
 
@@ -249,7 +248,7 @@
   name.
 
   @method partial
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @param {String} partialName The name of the template to render minus the leading underscore.
   @public
 */

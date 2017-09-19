@@ -2,8 +2,7 @@ import { deprecate } from 'ember-debug';
 import calculateLocationDisplay from '../system/calculate-location-display';
 
 /**
- @module ember
- @submodule ember-htmlbars
+ @module @ember.compile
 */
 
 /**

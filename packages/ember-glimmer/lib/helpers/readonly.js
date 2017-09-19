@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { UPDATE } from '../utils/references';
 import { unMut } from './mut';
@@ -97,7 +96,8 @@ import { unMut } from './mut';
 
   @method readonly
   @param {Object} [attr] the read-only attribute.
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @private
 */
 export default function(vm, args) {

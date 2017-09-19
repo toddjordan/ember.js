@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.application
 */
 
 import symbol from './symbol';
@@ -40,7 +39,9 @@ export const OWNER = symbol('OWNER');
   ```
 
   @method getOwner
-  @for Ember
+  @for application
+  @namespace @ember
+  @static
   @param {Object} object An object with an owner.
   @return {Object} An owner object.
   @since 2.3.0
@@ -55,7 +56,9 @@ export function getOwner(object) {
   useful in some testing cases.
 
   @method setOwner
-  @for Ember
+  @for application
+  @namespace @ember
+  @static
   @param {Object} object An object instance.
   @param {Object} object The new owner object of the object instance.
   @since 2.3.0

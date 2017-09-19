@@ -1,6 +1,5 @@
 /**
- @module ember
- @submodule ember-views
+ @module @ember.component
 */
 import { inspect } from 'ember-utils';
 import { Mixin, get, isNone } from 'ember-metal';
@@ -20,8 +19,8 @@ function validateAction(component, actionName) {
 }
 
 /**
- @class ActionSupport
- @namespace Ember
+ @class action_support
+ @namespace @ember.component
  @private
 */
 export default Mixin.create({

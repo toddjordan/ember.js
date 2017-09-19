@@ -7,8 +7,7 @@ import {
 } from 'ember-metal';
 
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 
 /**
@@ -43,8 +42,8 @@ import {
   }).off('event', this, forgetThis);
   ```
 
-  @class Evented
-  @namespace Ember
+  @class evented
+  @namespace @ember.object
   @public
  */
 export default Mixin.create({

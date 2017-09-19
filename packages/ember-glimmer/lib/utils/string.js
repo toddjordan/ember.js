@@ -1,10 +1,10 @@
-/**
-@module ember
-@submodule ember-glimmer
-*/
-
 import { deprecate } from 'ember-debug';
 
+/**
+@class string
+@namespace @ember
+@static
+*/
 export class SafeString {
   constructor(string) {
     this.string = string;
@@ -83,7 +83,7 @@ export function escapeExpression(string) {
   ```
 
   @method htmlSafe
-  @for Ember.String
+  @namespace @ember
   @static
   @return {Handlebars.SafeString} A string that will not be HTML escaped by Handlebars.
   @public
@@ -109,7 +109,7 @@ export function htmlSafe(str) {
   ```
 
   @method isHTMLSafe
-  @for Ember.String
+  @namespace @ember
   @static
   @return {Boolean} `true` if the string was decorated with `htmlSafe`, `false` otherwise.
   @public

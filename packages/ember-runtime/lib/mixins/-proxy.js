@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 
 import { CachedTag, DirtyableTag, UpdatableTag } from '@glimmer/reference';
@@ -67,8 +66,8 @@ class ProxyTag extends CachedTag {
   `Ember.ProxyMixin` forwards all properties not defined by the proxy itself
   to a proxied `content` object.  See Ember.ObjectProxy for more details.
 
-  @class ProxyMixin
-  @namespace Ember
+  @class proxy_mixin
+  @namespace @ember.object
   @private
 */
 export default Mixin.create({
@@ -76,7 +75,7 @@ export default Mixin.create({
     The object whose properties will be forwarded.
 
     @property content
-    @type Ember.Object
+    @type @ember.object
     @default null
     @private
   */

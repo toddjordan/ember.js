@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-testing
+@module @ember.testing
 */
 /**
   Simulates a key event, e.g. `keypress`, `keydown`, `keyup` with the desired keyCode

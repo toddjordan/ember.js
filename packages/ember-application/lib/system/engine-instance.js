@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-application
+@module @ember.application
 */
 
 import { guidFor } from 'ember-utils';
@@ -20,8 +19,9 @@ import { getEngineParent, setEngineParent } from './engine-parent';
   running `Engine`.
 
   @public
-  @class Ember.EngineInstance
-  @extends Ember.Object
+  @class instance
+  @namespace @ember.application.engine
+  @extends @ember.object
   @uses RegistryProxyMixin
   @uses ContainerProxyMixin
 */
@@ -30,7 +30,7 @@ const EngineInstance = EmberObject.extend(RegistryProxyMixin, ContainerProxyMixi
   /**
     The base `Engine` for which this is an instance.
 
-    @property {Ember.Engine} engine
+    @property {@ember.engine} engine
     @private
   */
   base: null,
@@ -70,7 +70,7 @@ const EngineInstance = EmberObject.extend(RegistryProxyMixin, ContainerProxyMixi
     @private
     @method boot
     @param options {Object}
-    @return {Promise<Ember.EngineInstance,Error>}
+    @return {Promise<@ember.application.engine.instance,Error>}
   */
   boot(options) {
     if (this._bootPromise) { return this._bootPromise; }
@@ -139,7 +139,7 @@ const EngineInstance = EmberObject.extend(RegistryProxyMixin, ContainerProxyMixi
     @method buildChildEngineInstance
     @param name {String} the registered name of the engine.
     @param options {Object} options provided to the engine instance.
-    @return {Ember.EngineInstance,Error}
+    @return {@ember.application.engine.instance,Error}
   */
   buildChildEngineInstance(name, options = {}) {
     let Engine = this.lookup(`engine:${name}`);
@@ -195,7 +195,7 @@ EngineInstance.reopenClass({
   /**
    @private
    @method setupRegistry
-   @param {Registry} registry
+   @param {@ember.application.registry} registry
    @param {BootOptions} options
    */
   setupRegistry(registry, options) {

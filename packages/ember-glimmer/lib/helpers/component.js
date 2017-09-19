@@ -1,6 +1,5 @@
 /**
-  @module ember
-  @submodule ember-glimmer
+  @module @ember.component
 */
 import { assign } from 'ember-utils';
 import { CachedReference } from '../utils/references';
@@ -136,8 +135,9 @@ import { DEBUG } from 'ember-env-flags';
   ```
 
   @method component
+  @static
   @since 1.11.0
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @public
 */
 export class ClosureComponentReference extends CachedReference {

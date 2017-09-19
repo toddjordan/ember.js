@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { assign } from 'ember-utils';
 import { InternalHelperReference } from '../utils/references';
@@ -18,7 +17,8 @@ import { QueryParams } from 'ember-routing';
   ```
 
   @method query-params
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @param {Object} hash takes a hash of query parameters
   @return {Object} A `QueryParams` object for `{{link-to}}`
   @public

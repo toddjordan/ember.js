@@ -21,7 +21,7 @@ export const callbacks = [];
   ```
 
   @public
-  @for Ember.Test
+  @for @ember.testing
   @method onInjectHelpers
   @param {Function} callback The function to be called.
 */

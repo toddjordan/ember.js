@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 
 import { Mixin, get } from 'ember-metal';
@@ -13,8 +12,8 @@ import { assert, deprecate } from 'ember-debug';
   and `Ember.Route` and available to the above classes through
   inheritance.)
 
-  @class ActionHandler
-  @namespace Ember
+  @class action_handler
+  @namespace @ember.object
   @private
 */
 const ActionHandler = Mixin.create({

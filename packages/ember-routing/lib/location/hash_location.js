@@ -8,8 +8,7 @@ import { Object as EmberObject } from 'ember-runtime';
 import EmberLocation from './api';
 
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 /**
@@ -36,9 +35,9 @@ import EmberLocation from './api';
 
   This will result in a posts.new url of `/#/posts/new`.
 
-  @class HashLocation
-  @namespace Ember
-  @extends Ember.Object
+  @class hash_location
+  @namespace @ember.routing
+  @extends @ember.object
   @protected
 */
 export default EmberObject.extend({

@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 import { assert } from 'ember-debug';
@@ -124,7 +123,8 @@ class ConditionalHelperReference extends CachedReference {
   `expensive-operation` will always calculate.
 
   @method if
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @public
 */
 export function inlineIf(vm, { positional }) {
@@ -153,7 +153,8 @@ export function inlineIf(vm, { positional }) {
   ```
 
   @method unless
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @public
 */
 export function inlineUnless(vm, { positional }) {

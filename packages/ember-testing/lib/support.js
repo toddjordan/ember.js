@@ -4,9 +4,9 @@ import { jQuery } from 'ember-views';
 import { environment } from 'ember-environment';
 
 /**
-  @module ember
-  @submodule ember-testing
+@module @ember.testing
 */
+
 
 const $ = jQuery;
 

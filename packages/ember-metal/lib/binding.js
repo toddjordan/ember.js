@@ -18,8 +18,7 @@ import {
 } from './path_cache';
 
 /**
-@module ember
-@submodule ember-metal
+@module @ember.object
 */
 
 // ..........................................................
@@ -52,7 +51,7 @@ class Binding {
     This copies the Binding so it can be connected to another object.
 
     @method copy
-    @return {Ember.Binding} `this`
+    @return {@ember.object.binding} `this`
     @public
   */
   copy() {
@@ -76,7 +75,7 @@ class Binding {
 
     @method from
     @param {String} path The property path to connect to.
-    @return {Ember.Binding} `this`
+    @return {@ember.object.binding} `this`
     @public
   */
   from(path) {
@@ -95,7 +94,7 @@ class Binding {
 
     @method to
     @param {String|Tuple} path A property path or tuple.
-    @return {Ember.Binding} `this`
+    @return {@ember.object.binding} `this`
     @public
   */
   to(path) {
@@ -110,7 +109,7 @@ class Binding {
     a different value.
 
     @method oneWay
-    @return {Ember.Binding} `this`
+    @return {@ember.object.binding} `this`
     @public
   */
   oneWay() {
@@ -139,7 +138,7 @@ class Binding {
 
     @method connect
     @param {Object} obj The root object for this binding.
-    @return {Ember.Binding} `this`
+    @return {@ember.object.binding} `this`
     @public
   */
   connect(obj) {
@@ -198,7 +197,7 @@ class Binding {
     will not usually need to call this method.
 
     @method disconnect
-    @return {Ember.Binding} `this`
+    @return {@ember.object.binding} `this`
     @public
   */
   disconnect() {
@@ -474,8 +473,8 @@ mixinProperties(Binding, {
   create bindings for you. You should always use the highest-level APIs
   available, even if you understand how it works underneath.
 
-  @class Binding
-  @namespace Ember
+  @class binding
+  @namespace @ember.object
   @since Ember 0.9
   @public
 */
@@ -487,13 +486,13 @@ mixinProperties(Binding, {
   along with a `to` and `from` path to create and connect the binding.
 
   @method bind
-  @for Ember
+  @for @ember.object.binding
   @param {Object} obj The root object of the transform.
   @param {String} to The path to the 'to' side of the binding.
     Must be relative to obj.
   @param {String} from The path to the 'from' side of the binding.
     Must be relative to obj or a global path.
-  @return {Ember.Binding} binding instance
+  @return {@ember.object.binding} binding instance
   @public
 */
 export function bind(obj, to, from) {

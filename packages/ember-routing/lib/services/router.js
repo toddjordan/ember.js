@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 import {
@@ -14,7 +13,8 @@ import { shallowEqual } from '../utils';
    access to the router.
 
    @public
-   @class RouterService
+   @class service
+   @namespace @ember.routing
    @category ember-routing-router-service
  */
 const RouterService = Service.extend({

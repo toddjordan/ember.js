@@ -1,7 +1,9 @@
 import { ENV } from 'ember-environment';
 import * as FLAGS from 'ember/features';
 let { FEATURES } = FLAGS;
-
+/**
+  @module @ember.debug
+*/
 /**
   The hash of enabled Canary features. Add to this, any canary features
   before creating your application.
@@ -9,8 +11,8 @@ let { FEATURES } = FLAGS;
   Alternatively (and recommended), you can also define `EmberENV.FEATURES`
   if you need to enable features flagged at runtime.
 
-  @class FEATURES
-  @namespace Ember
+  @class features
+  @namespace @ember.debug
   @static
   @since 1.1.0
   @public
@@ -30,7 +32,7 @@ let { FEATURES } = FLAGS;
   @method isEnabled
   @param {String} feature The feature to check
   @return {Boolean}
-  @for Ember.FEATURES
+  @for @ember.debug.features
   @since 1.1.0
   @public
 */

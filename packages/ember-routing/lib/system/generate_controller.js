@@ -2,14 +2,13 @@ import { get } from 'ember-metal';
 import { info } from 'ember-debug';
 import { DEBUG } from 'ember-env-flags';
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 /**
   Generates a controller factory
 
-  @for Ember
+  @for @ember.routing
   @method generateControllerFactory
   @private
 */
@@ -34,7 +33,7 @@ export function generateControllerFactory(owner, controllerName, context) {
   Generates and instantiates a controller extending from `controller:basic`
   if present, or `Ember.Controller` if not.
 
-  @for Ember
+  @for @ember.routing
   @method generateController
   @private
   @since 1.3.0

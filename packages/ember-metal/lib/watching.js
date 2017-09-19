@@ -1,5 +1,5 @@
 /**
-@module ember-metal
+@module @ember.object
 */
 import {
   watchKey,
@@ -26,7 +26,8 @@ import {
 
   @private
   @method watch
-  @for Ember
+  @for @ember.object
+  @static
   @param obj
   @param {String} _keyPath
 */
@@ -60,7 +61,8 @@ export function unwatch(obj, _keyPath, m) {
   Multiple calls will have no effect.
 
   @method destroy
-  @for Ember
+  @for @ember.object
+  @static
   @param {Object} obj  the object to destroy
   @return {void}
   @private

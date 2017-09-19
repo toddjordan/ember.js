@@ -7,9 +7,10 @@
   var c = { company: 'Tilde Inc.' };
   Ember.assign(a, b, c); // a === { first: 'Yehuda', last: 'Katz', company: 'Tilde Inc.' }, b === { last: 'Katz' }, c === { company: 'Tilde Inc.' }
   ```
-
+  @class polyfills
+  @namespace @ember
+  @static
   @method assign
-  @for Ember
   @param {Object} original The object to assign into
   @param {Object} ...args The objects to copy properties from
   @return {Object}

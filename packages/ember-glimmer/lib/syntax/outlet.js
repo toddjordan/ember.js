@@ -116,7 +116,8 @@ function outletComponentFor(vm, args) {
 
   @method outlet
   @param {String} [name]
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @public
 */
 export function outletMacro(name, params, hash, builder) {

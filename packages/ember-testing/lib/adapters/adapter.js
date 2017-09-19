@@ -3,16 +3,15 @@ import { Object as EmberObject } from 'ember-runtime';
 function K() { return this; }
 
 /**
- @module ember
- @submodule ember-testing
+ @module @ember.testing
 */
 
 /**
   The primary purpose of this class is to create hooks that can be implemented
   by an adapter for various test frameworks.
 
-  @class Adapter
-  @namespace Ember.Test
+  @class adapter
+  @namespace @ember.testing
   @public
 */
 export default EmberObject.extend({

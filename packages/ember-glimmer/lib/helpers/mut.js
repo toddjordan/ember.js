@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { symbol } from 'ember-utils';
 import { assert } from 'ember-debug';
@@ -72,8 +71,9 @@ import { INVOKE } from './action';
   ```
 
   @method mut
+  @static
   @param {Object} [attr] the "two-way" attribute that can be modified.
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @public
 */
 const MUT_REFERENCE = symbol('MUT');

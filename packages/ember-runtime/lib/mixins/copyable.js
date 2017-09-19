@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 
 import {
@@ -21,8 +20,8 @@ import { Freezable } from './freezable';
   Note that `frozenCopy()` will only work if you also implement
   `Ember.Freezable`.
 
-  @class Copyable
-  @namespace Ember
+  @class copyable
+  @namespace @ember.object
   @since Ember 0.9
   @private
 */

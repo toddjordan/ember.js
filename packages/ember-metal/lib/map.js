@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-metal
+@module @ember.map
 */
 
 /*
@@ -57,8 +56,8 @@ function copyMap(original, newObject) {
   Please do not use it at this time. We plan to clean it up
   and add many tests soon.
 
-  @class OrderedSet
-  @namespace Ember
+  @class ordered_set
+  @namespace @ember.map
   @constructor
   @private
 */
@@ -73,7 +72,7 @@ function OrderedSet() {
 /**
   @method create
   @static
-  @return {Ember.OrderedSet}
+  @return {@ember.map.ordered_set}
   @private
 */
 OrderedSet.create = function() {
@@ -98,7 +97,7 @@ OrderedSet.prototype = {
     @method add
     @param obj
     @param guid (optional, and for internal use)
-    @return {Ember.OrderedSet}
+    @return {@ember.map.ordered_set}
     @private
   */
   add(obj, _guid) {
@@ -201,7 +200,7 @@ OrderedSet.prototype = {
 
   /**
     @method copy
-    @return {Ember.OrderedSet}
+    @return {@ember.map.ordered_set}
     @private
   */
   copy() {

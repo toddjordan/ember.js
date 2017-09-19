@@ -6,8 +6,7 @@ import {
 } from 'ember-metal';
 
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.enumerable
 */
 
 /**
@@ -45,9 +44,9 @@ import {
   this mixin in your class and implement the required methods. In your unit
   tests, be sure to apply the Ember.MutableEnumerableTests to your object.
 
-  @class MutableEnumerable
-  @namespace Ember
-  @uses Ember.Enumerable
+  @class mutable
+  @namespace @ember
+  @uses @ember.enumerable
   @public
 */
 export default Mixin.create(Enumerable, {

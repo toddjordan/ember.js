@@ -5,9 +5,9 @@ import { assert } from 'ember-debug';
   Namespace for injection helper methods.
 
   @class inject
-  @namespace Ember
+  @namespace @ember
   @static
-  @public
+  @private
 */
 export default function inject() {
   assert(`Injected properties must be created through helpers, see '${Object.keys(inject).join('"', '"')}'`);
@@ -24,7 +24,7 @@ const typeValidators = {};
   @private
   @method createInjectionHelper
   @since 1.10.0
-  @for Ember
+  @for @ember.application
   @param {String} type The container type the helper will inject
   @param {Function} validator A validation callback that is executed at mixin-time
 */
@@ -41,7 +41,7 @@ export function createInjectionHelper(type, validator) {
   @private
   @method validatePropertyInjections
   @since 1.10.0
-  @for Ember
+  @for @ember.application
   @param {Object} factory The factory object
 */
 export function validatePropertyInjections(factory) {

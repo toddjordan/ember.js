@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 import { guidFor } from 'ember-utils';
 import Ember, {
@@ -36,9 +35,9 @@ export function setSearchDisabled(flag) {
   });
   ```
 
-  @class Namespace
-  @namespace Ember
-  @extends Ember.Object
+  @class namespace
+  @namespace @ember.object
+  @extends @ember.object
   @public
 */
 const Namespace = EmberObject.extend({

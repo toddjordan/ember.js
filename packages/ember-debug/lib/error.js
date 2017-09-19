@@ -12,8 +12,8 @@ function ExtendBuiltin(klass) {
 /**
   A subclass of the JavaScript Error object for use in Ember.
 
-  @class Error
-  @namespace Ember
+  @class error
+  @namespace @ember.application
   @extends Error
   @constructor
   @public

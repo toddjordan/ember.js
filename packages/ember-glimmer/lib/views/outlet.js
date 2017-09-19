@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { assign } from 'ember-utils';
 import { DirtyableTag } from '@glimmer/reference';

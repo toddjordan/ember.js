@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-application
+@module @ember.application
 */
 import { dictionary } from 'ember-utils';
 import { ENV, environment } from 'ember-environment';
@@ -187,9 +186,9 @@ let librariesRegistered = false;
   `ready()` method on your app that will be invoked immediately before routing
   begins.
 
-  @class Application
-  @namespace Ember
-  @extends Ember.Engine
+  @class application
+  @namespace @ember
+  @extends @ember.application.engine
   @uses RegistryProxyMixin
   @public
 */
@@ -222,7 +221,7 @@ const Application = Engine.extend({
     See the documentation for `Ember.EventDispatcher` for more information.
 
     @property eventDispatcher
-    @type Ember.EventDispatcher
+    @type @ember.object.event_dispatcher
     @default null
     @public
   */
@@ -366,7 +365,7 @@ const Application = Engine.extend({
 
     @private
     @method buildInstance
-    @return {Ember.ApplicationInstance} the application instance
+    @return {@ember.application.instance} the application instance
   */
   buildInstance(options = {}) {
     options.base = this;
@@ -523,7 +522,7 @@ const Application = Engine.extend({
     or the application will never become ready and routing will not begin.
 
     @method advanceReadiness
-    @see {Ember.Application#deferReadiness}
+    @see {@ember.application#deferReadiness}
     @public
   */
   advanceReadiness() {
@@ -549,7 +548,7 @@ const Application = Engine.extend({
 
     @private
     @method boot
-    @return {Promise<Ember.Application,Error>}
+    @return {Promise<@ember.application,Error>}
   */
   boot() {
     if (this._bootPromise) { return this._bootPromise; }
@@ -965,8 +964,8 @@ const Application = Engine.extend({
     @public
     @method visit
     @param url {String} The initial URL to navigate to
-    @param options {Ember.ApplicationInstance.BootOptions}
-    @return {Promise<Ember.ApplicationInstance, Error>}
+    @param options {@ember.application.instance.boot_options}
+    @return {Promise<@ember.application.instance, Error>}
   */
   visit(url, options) {
     return this.boot().then(() => {
@@ -1011,9 +1010,9 @@ Application.reopenClass({
 
     @method buildRegistry
     @static
-    @param {Ember.Application} namespace the application for which to
+    @param {ember.application} namespace the application for which to
       build the registry
-    @return {Ember.Registry} the built registry
+    @return {@ember.application.registry} the built registry
     @private
   */
   buildRegistry(application, options = {}) {

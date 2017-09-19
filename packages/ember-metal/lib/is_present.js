@@ -1,4 +1,7 @@
 import isBlank from './is_blank';
+/**
+ @module @ember.utils
+ */
 
 /**
   A value is present if it not `isBlank`.
@@ -24,7 +27,9 @@ import isBlank from './is_blank';
   ```
 
   @method isPresent
-  @for Ember
+  @for utils
+  @namespace @ember
+  @static
   @param {Object} obj Value to test
   @return {Boolean}
   @since 1.8.0

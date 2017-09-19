@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { assert } from 'ember-debug';
 import { DEBUG } from 'ember-env-flags';
@@ -31,7 +30,7 @@ function dynamicEngineFor(vm, args, meta) {
   `{{mount}}`.
 
   @method mount
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @category ember-application-engines
   @public
 */

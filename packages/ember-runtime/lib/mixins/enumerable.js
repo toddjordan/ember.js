@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.enumerable
 */
 
 // ..........................................................
@@ -86,8 +85,8 @@ function iter(key, value) {
   libraries by implementing only methods that mostly correspond to the
   JavaScript 1.8 API.
 
-  @class Enumerable
-  @namespace Ember
+  @class enumerable
+  @namespace @ember
   @since Ember 0.9
   @private
 */

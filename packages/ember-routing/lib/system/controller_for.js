@@ -1,12 +1,12 @@
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 /**
   Finds a controller instance.
 
-  @for Ember
+  @for @ember.routing
+  @static
   @method controllerFor
   @private
 */

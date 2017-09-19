@@ -3,8 +3,7 @@ import EmberComponent from '../component';
 import layout from '../templates/empty';
 
 /**
-@module ember
-@submodule ember-views
+@module @ember.component
 */
 
 /**
@@ -27,9 +26,9 @@ import layout from '../templates/empty';
   properties will not be applied. See [Ember.View](/api/classes/Ember.View.html)'s
   layout section for more information.
 
-  @class Checkbox
-  @namespace Ember
-  @extends Ember.Component
+  @class checkbox
+  @namespace @ember
+  @extends @ember.component
   @public
 */
 export default EmberComponent.extend({

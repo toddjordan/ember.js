@@ -4,8 +4,7 @@ import {
 } from './watching';
 
 /**
-@module ember
-@submodule ember-metal
+@module @ember.object
 */
 
 // ..........................................................

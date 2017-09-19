@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 
 import {
@@ -87,8 +86,8 @@ import { assert } from 'ember-debug';
   resulting value of the computed property is unchanged. This is necessary
   because computed properties are not computed until `get` is called.
 
-  @class Observable
-  @namespace Ember
+  @class observable
+  @namespace @ember.object
   @public
 */
 export default Mixin.create({
@@ -240,7 +239,7 @@ export default Mixin.create({
     deferring.
 
     @method beginPropertyChanges
-    @return {Ember.Observable}
+    @return {@ember.object.observable}
     @private
   */
   beginPropertyChanges() {
@@ -259,7 +258,7 @@ export default Mixin.create({
     deliver the deferred change notifications and end deferring.
 
     @method endPropertyChanges
-    @return {Ember.Observable}
+    @return {@ember.object.observable}
     @private
   */
   endPropertyChanges() {
@@ -283,7 +282,7 @@ export default Mixin.create({
 
     @method propertyWillChange
     @param {String} keyName The property key that is about to change.
-    @return {Ember.Observable}
+    @return {@ember.object.observable}
     @private
   */
   propertyWillChange(keyName) {
@@ -307,7 +306,7 @@ export default Mixin.create({
 
     @method propertyDidChange
     @param {String} keyName The property key that has just changed.
-    @return {Ember.Observable}
+    @return {@ember.object.observable}
     @private
   */
   propertyDidChange(keyName) {
@@ -321,7 +320,7 @@ export default Mixin.create({
 
     @method notifyPropertyChange
     @param {String} keyName The property key to be notified about.
-    @return {Ember.Observable}
+    @return {@ember.object.observable}
     @public
   */
   notifyPropertyChange(keyName) {

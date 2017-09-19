@@ -27,7 +27,7 @@ export const helpers = {};
   ```
 
   @public
-  @for Ember.Test
+  @for @ember.testing
   @method registerHelper
   @param {String} name The name of the helper method to add.
   @param {Function} helperMethod
@@ -75,7 +75,7 @@ export function registerHelper(name, helperMethod) {
   ```
 
   @public
-  @for Ember.Test
+  @for @ember.testing
   @method registerAsyncHelper
   @param {String} name The name of the helper method to add.
   @param {Function} helperMethod

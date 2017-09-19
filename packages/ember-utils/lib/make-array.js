@@ -18,7 +18,9 @@ const { isArray } = Array;
  ```
 
  @method makeArray
- @for Ember
+ @for array
+ @static
+ @namespace @ember
  @param {Object} obj the object
  @return {Array}
  @private

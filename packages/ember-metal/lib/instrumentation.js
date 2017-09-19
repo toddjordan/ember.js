@@ -1,6 +1,9 @@
 /* eslint no-console:off */
 /* global console */
 
+/**
+@module @ember.instrumentation
+ */
 import { ENV } from 'ember-environment';
 import { EMBER_IMPROVED_INSTRUMENTATION } from 'ember/features';
 
@@ -46,8 +49,8 @@ import { EMBER_IMPROVED_INSTRUMENTATION } from 'ember/features';
   `render`, `render.handlebars`, `render.container`, or
   even `render.handlebars.layout`.
 
-  @class Instrumentation
-  @namespace Ember
+  @class instrumentation
+  @namespace @ember
   @static
   @private
 */
@@ -82,8 +85,8 @@ const time = (() => {
   Notifies event's subscribers, calls `before` and `after` hooks.
 
   @method instrument
-  @namespace Ember.Instrumentation
-
+  @namespace @ember.instrumentation
+  @static
   @param {String} [name] Namespaced event name.
   @param {Object} _payload
   @param {Function} callback Function that you're instrumenting.
@@ -185,8 +188,8 @@ export function _instrumentStart(name, _payload, _payloadParam) {
   Subscribes to a particular event or instrumented block of code.
 
   @method subscribe
-  @namespace Ember.Instrumentation
-
+  @namespace @ember.instrumentation
+  @static
   @param {String} [pattern] Namespaced event name.
   @param {Object} [object] Before and After hooks.
 
@@ -226,8 +229,8 @@ export function subscribe(pattern, object) {
   Unsubscribes from a particular event or instrumented block of code.
 
   @method unsubscribe
-  @namespace Ember.Instrumentation
-
+  @namespace @ember.instrumentation
+  @static
   @param {Object} [subscriber]
   @private
 */
@@ -248,7 +251,8 @@ export function unsubscribe(subscriber) {
   Resets `Ember.Instrumentation` by flushing list of subscribers.
 
   @method reset
-  @namespace Ember.Instrumentation
+  @static
+  @namespace @ember.instrumentation
   @private
 */
 export function reset() {

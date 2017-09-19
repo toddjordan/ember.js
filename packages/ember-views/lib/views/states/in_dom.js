@@ -5,8 +5,7 @@ import { DEBUG } from 'ember-env-flags';
 
 import hasElement from './has_element';
 /**
-@module ember
-@submodule ember-views
+@module @ember.component
 */
 
 const inDOM = Object.create(hasElement);

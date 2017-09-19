@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 // ES6TODO: Cleanup modules with side-effects below

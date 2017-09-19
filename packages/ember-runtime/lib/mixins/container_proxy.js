@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.application
 */
 import {
   Mixin,
@@ -11,7 +10,7 @@ import {
   ContainerProxyMixin is used to provide public access to specific
   container functionality.
 
-  @class ContainerProxyMixin
+  @class @ember.application.container_proxy_mixin
   @private
 */
 let containerProxyMixin = {
@@ -19,7 +18,7 @@ let containerProxyMixin = {
    The container stores state.
 
    @private
-   @property {Ember.Container} __container__
+   @property {@ember.application.container} __container__
    */
   __container__: null,
 
@@ -153,7 +152,7 @@ let containerProxyMixin = {
   ```
 
   @public
-  @class ContainerProxyMixin
+  @class @ember.application.container_proxy_mixin
   @method factoryFor
   @param {String} fullName
   @param {Object} options

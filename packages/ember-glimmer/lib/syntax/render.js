@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 import { ConstReference, isConst } from '@glimmer/reference';
@@ -109,7 +108,8 @@ function makeComponentDefinition(vm, args) {
   ```
 
   @method render
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @param {String} name
   @param {Object?} context
   @param {Hash} options

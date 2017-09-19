@@ -5,14 +5,13 @@ import { createInjectionHelper } from '../inject';
 import { deprecateUnderscoreActions } from '../mixins/action_handler';
 
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.controller
 */
 
 /**
-  @class Controller
-  @namespace Ember
-  @extends Ember.Object
+  @class controller
+  @namespace @ember
+  @extends @ember.object
   @uses Ember.ControllerMixin
   @public
 */
@@ -51,9 +50,10 @@ function controllerInjectionHelper(factory) {
   });
   ```
 
-  @method controller
+  @method inject
+  @static
   @since 1.10.0
-  @for Ember.inject
+  @for @ember.controller
   @param {String} name (optional) name of the controller to inject, defaults
          to the property's name
   @return {Ember.InjectedProperty} injection descriptor instance

@@ -1,7 +1,7 @@
 /**
-  @module ember
-  @submodule ember-testing
+@module @ember.testing
 */
+
 import {
   helpers,
   registerHelper,
@@ -32,8 +32,9 @@ import {
   * Setup callbacks to be fired when the test helpers are injected into
     your application.
 
-  @class Test
-  @namespace Ember
+  @class testing
+  @namespace @ember
+  @static
   @public
 */
 const Test = {
@@ -73,10 +74,10 @@ const Test = {
  If you do not set it, ember-testing will default to `Ember.Test.QUnitAdapter`.
 
  @public
- @for Ember.Test
+ @for @ember.testing
  @property adapter
  @type {Class} The adapter to be used.
- @default Ember.Test.QUnitAdapter
+ @default @ember.testing.qunit_adapter
 */
 Object.defineProperty(Test, 'adapter', {
   get: getAdapter,

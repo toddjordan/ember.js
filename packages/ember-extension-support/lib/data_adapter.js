@@ -11,8 +11,7 @@ import {
 } from 'ember-runtime';
 
 /**
-@module ember
-@submodule ember-extension-support
+@module @ember.debug
 */
 
 /**
@@ -52,9 +51,9 @@ import {
   });
   ```
 
-  @class DataAdapter
-  @namespace Ember
-  @extends EmberObject
+  @class data_adapter
+  @namespace @ember.debug
+  @extends @ember.object
   @public
 */
 export default EmberObject.extend({

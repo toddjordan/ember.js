@@ -30,7 +30,7 @@ if (DEBUG) {
 }
 
 /**
-@module ember-metal
+@module @ember.object
 */
 
 export const UNDEFINED = symbol('undefined');
@@ -553,7 +553,7 @@ export function deleteMeta(obj) {
   methods that manipulate this hash indirectly.
 
   @method meta
-  @for Ember
+  @for @ember.object
   @private
 
   @param {Object} obj The object to retrieve meta for

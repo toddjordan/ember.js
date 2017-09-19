@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 import { assign } from 'ember-utils';
@@ -20,7 +19,8 @@ import { routeArgs } from '../utils';
   refer to the `Router` service.
 
   @private
-  @class RoutingService
+  @class service
+  @namespace @ember.routing
 */
 export default Service.extend({
   router: null,

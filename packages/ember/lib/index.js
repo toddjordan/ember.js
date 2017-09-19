@@ -51,7 +51,9 @@ Ember.deprecateFunc = EmberDebug.deprecateFunc;
 Ember.runInDebug = EmberDebug.runInDebug;
 /**
   @public
-  @class Ember.Debug
+  @static
+  @class debug
+  @namespace @ember
 */
 Ember.Debug = {
   registerDeprecationHandler: EmberDebug.registerDeprecationHandler,
@@ -215,7 +217,8 @@ Object.defineProperty(Ember, 'LOG_BINDINGS', {
   Internally, `Ember.onerror` is used as Backburner's error handler.
 
   @event onerror
-  @for Ember
+  @for @ember.application
+  @static
   @param {Exception} error the error object
   @public
 */
@@ -378,6 +381,12 @@ Ember.Controller = Controller;
 Ember.ControllerMixin = ControllerMixin;
 Ember.Service = Service;
 Ember._ProxyMixin = _ProxyMixin;
+/**
+  @module rsvp
+  @class rsvp
+  @static
+  @public
+*/
 Ember.RSVP = RSVP;
 Ember.Namespace = Namespace;
 
@@ -505,7 +514,7 @@ EmberString.isHTMLSafe = isHTMLSafe;
  separate files that get loaded into JavaScript at buildtime.
 
  @property TEMPLATES
- @for Ember
+ @for @ember.application
  @type Object
  @private
  */
@@ -522,6 +531,7 @@ export { VERSION };
 /**
  The semantic version
  @property VERSION
+ @for @ember.application
  @type String
  @public
  */
@@ -534,9 +544,9 @@ metal.libraries.registerCoreLibrary('Ember', VERSION);
 import * as views from 'ember-views';
 /**
  Alias for jQuery
-
+ @module jquery
  @method $
- @for Ember
+ @static
  @public
  */
 Ember.$ = views.jQuery;
@@ -604,9 +614,6 @@ if (has('ember-testing')) {
 
 runLoadHooks('Ember');
 
-/**
-@module ember
-*/
 export default Ember;
 
 

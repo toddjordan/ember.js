@@ -29,8 +29,7 @@ export const HAS_BLOCK = symbol('HAS_BLOCK');
 export const BOUNDS = symbol('BOUNDS');
 
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 /**
@@ -542,8 +541,8 @@ export const BOUNDS = symbol('BOUNDS');
   * `dragEnd`
   * `drop`
 
-  @class Component
-  @namespace Ember
+  @class component
+  @namespace @ember
   @extends Ember.CoreView
   @uses Ember.TargetActionSupport
   @uses Ember.ClassNamesSupport

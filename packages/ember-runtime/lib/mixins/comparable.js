@@ -1,8 +1,7 @@
 import { Mixin } from 'ember-metal';
 
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 
 /**
@@ -11,8 +10,8 @@ import { Mixin } from 'ember-metal';
 
   You should implement the `compare()` method.
 
-  @class Comparable
-  @namespace Ember
+  @class comparable
+  @namespace @ember.object
   @since Ember 0.9
   @private
 */

@@ -1,7 +1,6 @@
 
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { InternalHelperReference } from '../utils/references';
 import { String as StringUtils } from 'ember-runtime';
@@ -33,9 +32,10 @@ import { String as StringUtils } from 'ember-runtime';
   set up localized string references.
 
   @method loc
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @param {String} str The string to format.
-  @see {Ember.String#loc}
+  @see {@ember.string#loc}
   @public
 */
 function locHelper({ positional }) {

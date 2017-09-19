@@ -60,8 +60,8 @@ const backburner = new Backburner(['sync', 'actions', 'destroy'], {
   });
   ```
 
-  @class run
-  @namespace Ember
+  @class runloop
+  @namespace @ember
   @static
   @constructor
   @param {Object} [target] target of method to call
@@ -104,7 +104,7 @@ export default function run() {
   ```
 
   @method join
-  @namespace Ember
+  @namespace @ember
   @param {Object} [target] target of method to call
   @param {Function|String} method Method to invoke.
     May be a function or a string. If you pass a string
@@ -158,7 +158,7 @@ run.join = function() {
   method be safely handled and executed by the Ember run loop.
 
   @method bind
-  @namespace Ember
+  @namespace @ember
   @param {Object} [target] target of method to call
   @param {Function|String} method Method to invoke.
     May be a function or a string. If you pass a string

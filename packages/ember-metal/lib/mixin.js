@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-metal
+@module @ember.object
 */
 import {
   assign,
@@ -461,8 +460,8 @@ export function mixin(obj, ...args) {
   });
   ```
 
-  @class Mixin
-  @namespace Ember
+  @class mixin
+  @namespace @ember.object
   @public
 */
 export default class Mixin {
@@ -701,7 +700,9 @@ Alias.prototype = new Descriptor();
   ```
 
   @method aliasMethod
-  @for Ember
+  @static
+  @namespace @ember
+  @for object
   @param {String} methodName name of the method to alias
   @public
 */
@@ -728,7 +729,9 @@ export function aliasMethod(methodName) {
   enabled.
 
   @method observer
-  @for Ember
+  @for object
+  @namespace @ember
+  @static
   @param {String} propertyNames*
   @param {Function} func
   @return func

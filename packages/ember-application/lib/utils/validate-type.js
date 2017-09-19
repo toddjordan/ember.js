@@ -1,7 +1,3 @@
-/**
-@module ember
-@submodule ember-application
-*/
 
 import { assert, deprecate } from 'ember-debug';
 

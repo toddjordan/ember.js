@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 
 import {
@@ -12,7 +11,7 @@ import { deprecate } from 'ember-debug';
   RegistryProxyMixin is used to provide public access to specific
   registry functionality.
 
-  @class RegistryProxyMixin
+  @class @ember.application.registry_proxy_mixin
   @private
 */
 export default Mixin.create({

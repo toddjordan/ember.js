@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import Component from '../component';
 import { TextSupport } from 'ember-views';
@@ -182,7 +181,8 @@ import layout from '../templates/empty';
   See more about [Ember components](/api/classes/Ember.Component.html)
 
   @method textarea
-  @for Ember.Templates.helpers
+  @static
+  @for @ember.templates.helpers
   @param {Hash} options
   @public
 */
@@ -199,9 +199,9 @@ import layout from '../templates/empty';
   `layoutName` properties will not be applied. See [Ember.View](/api/classes/Ember.View.html)'s
   layout section for more information.
 
-  @class TextArea
-  @namespace Ember
-  @extends Ember.Component
+  @class text_area
+  @namespace @ember.component
+  @extends @ember.component
   @uses Ember.TextSupport
   @public
 */

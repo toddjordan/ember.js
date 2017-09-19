@@ -9,8 +9,7 @@ let warn = () => {};
 let missingOptionsDeprecation, missingOptionsIdDeprecation;
 
 /**
-@module ember
-@submodule ember-debug
+@module @ember.debug
 */
 
 if (DEBUG) {
@@ -39,7 +38,8 @@ if (DEBUG) {
     @public
     @static
     @method registerWarnHandler
-    @for Ember.Debug
+    @for debug
+    @namespace @ember
     @param handler {Function} A function to handle warnings.
     @since 2.1.0
   */
@@ -73,7 +73,9 @@ if (DEBUG) {
       `id` for this warning.  The `id` can be used by Ember debugging tools
       to change the behavior (raise, log, or silence) for that specific warning.
       The `id` should be namespaced by dots, e.g. "ember-debug.feature-flag-with-features-stripped"
-    @for Ember
+    @for debug
+    @namespace @ember
+    @static
     @public
     @since 1.0.0
   */

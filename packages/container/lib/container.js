@@ -27,7 +27,7 @@ const CONTAINER_OVERRIDE = symbol('CONTAINER_OVERRIDE');
  stable.
 
  @private
- @class Container
+ @class @ember.application.container
  */
 export default function Container(registry, options = {}) {
   this.registry        = registry;
@@ -46,7 +46,7 @@ Container.prototype = {
   /**
    @private
    @property registry
-   @type Registry
+   @type @ember.application.registry
    @since 1.11.0
    */
 

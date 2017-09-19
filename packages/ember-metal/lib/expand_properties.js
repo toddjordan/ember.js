@@ -1,8 +1,7 @@
 import { assert } from 'ember-debug';
 
 /**
-@module ember
-@submodule ember-metal
+@module @ember.object
 */
 
 var END_WITH_EACH_REGEX = /\.@each$/;

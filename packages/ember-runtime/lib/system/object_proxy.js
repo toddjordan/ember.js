@@ -64,9 +64,9 @@ import _ProxyMixin from '../mixins/-proxy';
   proxy.get('fullName');  // 'Tom Dale'
   ```
 
-  @class ObjectProxy
-  @namespace Ember
-  @extends Ember.Object
+  @class proxy
+  @namespace @ember.object
+  @extends @ember.object
   @uses Ember.ProxyMixin
   @public
 */

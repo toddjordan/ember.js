@@ -1,5 +1,8 @@
 import { get } from './property_get';
 import isNone from './is_none';
+/**
+@module @ember.utils
+ */
 
 /**
   Verifies that a value is `null` or `undefined`, an empty string, or an empty
@@ -22,7 +25,9 @@ import isNone from './is_none';
   ```
 
   @method isEmpty
-  @for Ember
+  @for utils
+  @namespace @ember
+  @static
   @param {Object} obj Value to test
   @return {Boolean}
   @public

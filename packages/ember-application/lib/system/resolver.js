@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-application
+@module @ember.application
 */
 
 import { dictionary } from 'ember-utils';
@@ -98,9 +97,9 @@ export const Resolver = EmberObject.extend({
   'model:post'              //=> App.Post
   ```
 
-  @class DefaultResolver
-  @namespace Ember
-  @extends Ember.Object
+  @class globals_resolver
+  @namespace @ember.application
+  @extends @ember.object
   @public
 */
 

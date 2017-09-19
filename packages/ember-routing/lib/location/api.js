@@ -3,8 +3,7 @@ import { environment } from 'ember-environment';
 import { getHash } from './util';
 
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 /**
@@ -64,8 +63,8 @@ import { getHash } from './util';
   }
   ```
 
-  @class Location
-  @namespace Ember
+  @class location
+  @namespace @ember.routing
   @static
   @private
 */

@@ -1,8 +1,7 @@
 import { run } from 'ember-metal';
 
 /**
-@module ember
-@submodule ember-views
+@module @ember.component
 */
 
 // Add a new named queue after the 'actions' queue (where RSVP promises

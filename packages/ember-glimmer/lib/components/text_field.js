@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-views
+@module @ember.component
 */
 import { computed } from 'ember-metal';
 import { environment } from 'ember-environment';
@@ -46,9 +45,9 @@ function canSetTypeOfInput(type) {
   properties will not be applied. See [Ember.View](/api/classes/Ember.View.html)'s
   layout section for more information.
 
-  @class TextField
-  @namespace Ember
-  @extends Ember.Component
+  @class text_field
+  @namespace @ember.component
+  @extends @ember.component
   @uses Ember.TextSupport
   @public
 */

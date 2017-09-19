@@ -40,8 +40,7 @@ import RouterState from './router_state';
 import { DEBUG } from 'ember-env-flags';
 
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 import Router from 'router';
@@ -55,9 +54,9 @@ const { slice } = Array.prototype;
   The `Ember.Router` class manages the application state and URLs. Refer to
   the [routing guide](https://emberjs.com/guides/routing/) for documentation.
 
-  @class Router
-  @namespace Ember
-  @extends Ember.Object
+  @class router
+  @namespace @ember.routing
+  @extends @ember.object
   @uses Ember.Evented
   @public
 */
@@ -77,7 +76,7 @@ const EmberRouter = EmberObject.extend(Evented, {
 
     @property location
     @default 'hash'
-    @see {Ember.Location}
+    @see {@ember.routing.location}
     @public
   */
   location: 'hash',
@@ -675,7 +674,7 @@ const EmberRouter = EmberObject.extend(Evented, {
 
     @private
     @method _serializeQueryParams
-    @param {Arrray<HandlerInfo>} handlerInfos
+    @param {Array<HandlerInfo>} handlerInfos
     @param {Object} queryParams
     @return {Void}
   */

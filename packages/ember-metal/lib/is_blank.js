@@ -1,4 +1,7 @@
 import isEmpty from './is_empty';
+/**
+@module @ember.utils
+ */
 
 /**
   A value is blank if it is empty or a whitespace string.
@@ -18,7 +21,9 @@ import isEmpty from './is_empty';
   ```
 
   @method isBlank
-  @for Ember
+  @for utils
+  @namespace @ember
+  @static
   @param {Object} obj Value to test
   @return {Boolean}
   @since 1.5.0

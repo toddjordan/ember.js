@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-application
+@module @ember.application
 */
 
 import { assign } from 'ember-utils';
@@ -37,7 +36,8 @@ let BootOptions;
   it once the particular test run or FastBoot request has finished.
 
   @public
-  @class Ember.ApplicationInstance
+  @class instance
+  @namespace @ember.application
   @extends Ember.EngineInstance
 */
 
@@ -45,7 +45,7 @@ const ApplicationInstance = EngineInstance.extend({
   /**
     The `Application` for which this is an instance.
 
-    @property {Ember.Application} application
+    @property {@ember.application} application
     @private
   */
   application: null,
@@ -319,8 +319,8 @@ ApplicationInstance.reopenClass({
 
   Internal, experimental or otherwise unstable flags are marked as private.
 
-  @class BootOptions
-  @namespace Ember.ApplicationInstance
+  @class boot_options
+  @namespace @ember.application.instance
   @public
 */
 BootOptions = function BootOptions(options = {}) {

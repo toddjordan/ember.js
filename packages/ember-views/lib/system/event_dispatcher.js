@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-views
+@module @ember.object
 */
 
 import { assign, getOwner } from 'ember-utils';
@@ -22,10 +21,10 @@ const ROOT_ELEMENT_SELECTOR = `.${ROOT_ELEMENT_CLASS}`;
   `Ember.EventDispatcher` ensures that that view's `mouseDown` method gets
   called.
 
-  @class EventDispatcher
-  @namespace Ember
+  @class event_dispatcher
+  @namespace @ember.component
   @private
-  @extends Ember.Object
+  @extends @ember.object
 */
 export default EmberObject.extend({
 

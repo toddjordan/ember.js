@@ -9,9 +9,9 @@ import { ENV } from 'ember-environment';
 import { registerHandler as genericRegisterHandler, invoke } from './handlers';
 
 /**
-@module ember
-@submodule ember-debug
-*/
+@module @ember.application
+ */
+
 
 /**
   Allows for runtime registration of handler functions that override the default deprecation behavior.
@@ -45,7 +45,7 @@ import { registerHandler as genericRegisterHandler, invoke } from './handlers';
   @public
   @static
   @method registerDeprecationHandler
-  @for Ember.Debug
+  @for @ember.application.deprecations
   @param handler {Function} A function to handle deprecation calls.
   @since 2.1.0
 */
@@ -152,7 +152,8 @@ if (DEBUG) {
       warning will be removed.
     @param {String} [options.url] An optional url to the transition guide on the
       emberjs.com website.
-    @for Ember
+    @for @ember.application.deprecations
+    @static
     @public
     @since 1.0.0
   */

@@ -9,8 +9,7 @@ import {
 } from '@glimmer/reference';
 
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 /**
@@ -53,7 +52,7 @@ import {
 
   @public
   @method get
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @since 2.1.0
  */
 

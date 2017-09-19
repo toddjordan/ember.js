@@ -21,8 +21,7 @@ import {
 import { assert, Error as EmberError } from 'ember-debug';
 
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.array
 */
 
 const OUT_OF_RANGE_EXCEPTION = 'Index out of range';
@@ -64,10 +63,10 @@ function K() { return this; }
   ap.get('firstObject'); // . 'DOG'
   ```
 
-  @class ArrayProxy
-  @namespace Ember
-  @extends Ember.Object
-  @uses Ember.MutableArray
+  @class proxy
+  @namespace @ember.array
+  @extends @ember.object
+  @uses @ember.array.mutable
   @public
 */
 export default EmberObject.extend(MutableArray, {
@@ -77,7 +76,7 @@ export default EmberObject.extend(MutableArray, {
     `Ember.MutableArray.`
 
     @property content
-    @type Ember.Array
+    @type @ember.array
     @private
   */
   content: null,

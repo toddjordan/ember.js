@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 import { assert } from 'ember-debug';
@@ -30,7 +29,8 @@ import { UnboundReference } from '../utils/references';
   unbound value.
 
   @method unbound
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @public
 */
 

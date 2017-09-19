@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-views
+@module @ember.component
 */
 
 import { Mixin } from 'ember-metal';
@@ -9,8 +8,8 @@ import { assert } from 'ember-debug';
 const EMPTY_ARRAY = Object.freeze([]);
 
 /**
-  @class ClassNamesSupport
-  @namespace Ember
+  @class class_names_support
+  @namespace @ember.component
   @private
 */
 export default Mixin.create({

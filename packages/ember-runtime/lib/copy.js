@@ -75,7 +75,8 @@ function _copy(obj, deep, seen, copies) {
   is simply returned.
 
   @method copy
-  @for Ember
+  @for @ember.object
+  @static
   @param {Object} obj The object to clone
   @param {Boolean} [deep=false] If true, a deep copy of the object is made.
   @return {Object} The copied object

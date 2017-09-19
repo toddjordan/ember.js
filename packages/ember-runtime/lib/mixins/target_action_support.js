@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.component
 */
 
 import { context } from 'ember-environment';
@@ -17,9 +16,9 @@ to add a `triggerAction` method with semantics similar to the Handlebars
 usually the best choice. This mixin is most often useful when you are
 doing more complex event handling in Components.
 
-@class TargetActionSupport
-@namespace Ember
-@extends Ember.Mixin
+@class target_action_support
+@namespace @ember.component
+@extends @ember.object.mixin
 @private
 */
 export default Mixin.create({

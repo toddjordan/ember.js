@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { symbol } from 'ember-utils';
 import {
@@ -265,7 +264,8 @@ export const ACTION = symbol('ACTION');
   ```
 
   @method action
-  @for Ember.Templates.helpers
+  @static
+  @for @ember.templates.helpers
   @public
 */
 export default function(vm, args) {

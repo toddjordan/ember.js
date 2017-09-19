@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.extensions
 */
 
 import { ENV } from 'ember-environment';
@@ -70,7 +69,7 @@ if (ENV.EXTEND_PROTOTYPES.Function) {
     See [Ember.ComputedProperty](/api/classes/Ember.ComputedProperty.html), [Ember.computed](/api/classes/Ember.computed.html).
 
     @method property
-    @for Function
+    @for @ember.extensions.function
     @public
   */
   FunctionPrototype.property = function () {
@@ -99,7 +98,7 @@ if (ENV.EXTEND_PROTOTYPES.Function) {
     See `Ember.observer`.
 
     @method observes
-    @for Function
+    @for @ember.extensions.function
     @public
   */
   FunctionPrototype.observes = function() {
@@ -147,7 +146,7 @@ if (ENV.EXTEND_PROTOTYPES.Function) {
     See `Ember.immediateObserver`.
 
     @method observesImmediately
-    @for Function
+    @for @ember.extensions.function
     @deprecated
     @private
   */
@@ -176,7 +175,7 @@ if (ENV.EXTEND_PROTOTYPES.Function) {
     See `Ember.on`.
 
     @method on
-    @for Function
+    @for @ember.extensions.function
     @public
   */
   FunctionPrototype.on = function () {

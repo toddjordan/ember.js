@@ -5,9 +5,10 @@ import Adapter from './adapter';
   This class implements the methods defined by Ember.Test.Adapter for the
   QUnit testing framework.
 
-  @class QUnitAdapter
-  @namespace Ember.Test
-  @extends Ember.Test.Adapter
+  @module @ember.testing
+  @class qunit_adapter
+  @namespace @ember.testing
+  @extends @ember.testing.adapter
   @public
 */
 export default Adapter.extend({

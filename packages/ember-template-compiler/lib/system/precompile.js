@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-template-compiler
+@module @ember.application
 */
 
 import compileOptions from './compile-options';

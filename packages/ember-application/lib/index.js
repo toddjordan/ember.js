@@ -1,8 +1,3 @@
-/**
-@module ember
-@submodule ember-application
-*/
-
 export { default as Application } from './system/application';
 export { default as ApplicationInstance } from './system/application-instance';
 export { default as Resolver } from './system/resolver';

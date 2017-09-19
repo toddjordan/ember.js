@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 /**
@@ -297,12 +296,13 @@
   ```
 
   @method link-to
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @param {String} routeName
   @param {Object} [context]*
   @param [options] {Object} Handlebars key/value pairs of options, you can override any property of Ember.LinkComponent
   @return {String} HTML string
-  @see {Ember.LinkComponent}
+  @see {@ember.component.link}
+  @static
   @public
 */
 
@@ -332,10 +332,10 @@ import { DEBUG } from 'ember-env-flags';
   of this class can be overridden with `reopen` to customize application-wide
   behavior.
 
-  @class LinkComponent
-  @namespace Ember
-  @extends Ember.Component
-  @see {Ember.Templates.helpers.link-to}
+  @class link
+  @namespace @ember.component
+  @extends @ember.component
+  @see {@ember.templates.helpers.link-to}
   @public
 **/
 const LinkComponent = EmberComponent.extend({

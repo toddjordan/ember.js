@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.array
 */
 import Ember, { // Ember.A circular
   replace,
@@ -29,9 +28,9 @@ import copy from '../copy';
   false, this will be applied automatically. Otherwise you can apply the mixin
   at anytime by calling `Ember.NativeArray.apply(Array.prototype)`.
 
-  @class NativeArray
-  @namespace Ember
-  @uses Ember.MutableArray
+  @class native
+  @namespace @ember.array
+  @uses @ember.array.mutable
   @uses Ember.Observable
   @uses Ember.Copyable
   @public
@@ -132,8 +131,8 @@ NativeArray = NativeArray.without(...ignore);
   ```
 
   @method A
-  @for Ember
-  @return {Ember.NativeArray}
+  @for array
+  @return {@ember.array.native}
   @public
 */
 let A;

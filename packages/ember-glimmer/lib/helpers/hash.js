@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 /**
@@ -35,7 +34,8 @@
    ```
 
    @method hash
-   @for Ember.Templates.helpers
+   @for @ember.templates.helpers
+   @static
    @param {Object} options
    @return {Object} Hash
    @since 2.3.0

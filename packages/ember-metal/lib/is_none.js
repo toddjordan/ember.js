@@ -1,4 +1,8 @@
 /**
+ @module @ember.utils
+*/
+
+/**
   Returns true if the passed value is null or undefined. This avoids errors
   from JSLint complaining about use of ==, which can be technically
   confusing.
@@ -13,7 +17,9 @@
   ```
 
   @method isNone
-  @for Ember
+  @for utils
+  @namespace @ember
+  @static
   @param {Object} obj Value to test
   @return {Boolean}
   @public

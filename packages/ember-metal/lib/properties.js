@@ -1,5 +1,5 @@
 /**
-@module ember-metal
+@module @ember.object
 */
 
 import { assert } from 'ember-debug';
@@ -120,7 +120,7 @@ export function INHERITING_GETTER_FUNCTION(name) {
 
   @private
   @method defineProperty
-  @for Ember
+  @for @ember.object
   @param {Object} obj the object to define this property on. This may be a prototype.
   @param {String} keyName the name of the property
   @param {Descriptor} [desc] an instance of `Descriptor` (typically a

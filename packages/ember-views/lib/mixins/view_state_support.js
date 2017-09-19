@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-views
+@module @ember.component
 */
 import { Mixin } from 'ember-metal';
 

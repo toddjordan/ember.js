@@ -1,4 +1,8 @@
 /**
+ @module @ember.utils
+*/
+
+/**
   Compares two objects, returning true if they are equal.
 
   ```javascript
@@ -30,7 +34,9 @@
   ```
 
   @method isEqual
-  @for Ember
+  @for utils
+  @static
+  @namespace @ember
   @param {Object} a first object to compare
   @param {Object} b second object to compare
   @return {Boolean}

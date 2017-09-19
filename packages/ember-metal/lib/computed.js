@@ -16,11 +16,6 @@ import {
   removeDependentKeys
 } from './dependent_keys';
 
-/**
-@module ember
-@submodule ember-metal
-*/
-
 const DEEP_EACH_REGEX = /\.@each\.[^.]+\./;
 
 /**
@@ -123,8 +118,7 @@ const DEEP_EACH_REGEX = /\.@each\.[^.]+\./;
   - [New CP syntax RFC](https://github.com/emberjs/rfcs/blob/master/text/0011-improved-cp-syntax.md)
   - [New computed syntax explained in "Ember 1.12 released" ](https://emberjs.com/blog/2015/05/13/ember-1-12-released.html#toc_new-computed-syntax)
 
-  @class ComputedProperty
-  @namespace Ember
+  @class computed_property
   @public
 */
 function ComputedProperty(config, opts) {
@@ -169,7 +163,10 @@ const ComputedPropertyPrototype = ComputedProperty.prototype;
   ```
 
   @method volatile
-  @return {Ember.ComputedProperty} this
+  @static
+  @namespace @ember.object
+  @for computed
+  @return {@ember.object.computed_property} this
   @chainable
   @public
 */
@@ -195,7 +192,10 @@ ComputedPropertyPrototype.volatile = function() {
   ```
 
   @method readOnly
-  @return {Ember.ComputedProperty} this
+  @for computed
+  @namespace @ember.object
+  @static
+  @return {@ember.object.computed_property} this
   @chainable
   @public
 */
@@ -228,8 +228,11 @@ ComputedPropertyPrototype.readOnly = function() {
   ```
 
   @method property
+  @for computed
+  @namespace @ember.object
+  @static
   @param {String} path* zero or more property paths
-  @return {Ember.ComputedProperty} this
+  @return {@ember.object.computed_property} this
   @chainable
   @public
 */
@@ -276,6 +279,9 @@ ComputedPropertyPrototype.property = function() {
   via the `metaForProperty()` function.
 
   @method meta
+  @for computed
+  @namespace @ember.object
+  @static
   @param {Object} meta
   @chainable
   @public
@@ -511,12 +517,12 @@ ComputedPropertyPrototype.teardown = function(obj, keyName, meta) {
   ```
 
   @class computed
-  @namespace Ember
-  @constructor
   @static
+  @namespace @ember.object
+  @constructor
   @param {String} [dependentKeys*] Optional dependent keys that trigger this computed property.
   @param {Function} func The computed property function.
-  @return {Ember.ComputedProperty} property descriptor instance
+  @return {@ember.object.computed_property} property descriptor instance
   @public
 */
 export default function computed(...args) {
@@ -538,7 +544,9 @@ export default function computed(...args) {
   it to be created.
 
   @method cacheFor
-  @for Ember
+  @for computed
+  @namespace @ember.object
+  @static
   @param {Object} obj the object whose property you want to check
   @param {String} key the name of the property whose cached value you want
     to return

@@ -1,8 +1,3 @@
-/**
-@module ember
-@submodule ember-metal
-*/
-
 export { default } from './core'; // reexports
 export {
   default as computed,
@@ -104,7 +99,11 @@ export {
 export { default as getProperties } from './get_properties';
 export { default as setProperties } from './set_properties';
 export { default as expandProperties } from './expand_properties';
-
+/**
+ * @class observers
+ * @namespace @ember.object
+ * @static
+ */
 export {
   _suspendObserver,
   _suspendObservers,

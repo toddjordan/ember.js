@@ -1,7 +1,7 @@
 /**
-@module ember
-@submodule ember-testing
+@module @ember.testing
 */
+
 import { run } from 'ember-metal';
 
 /**

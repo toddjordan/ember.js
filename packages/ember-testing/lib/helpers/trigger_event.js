@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-testing
+@module @ember.testing
 */
 import { fireEvent } from '../events';
 /**

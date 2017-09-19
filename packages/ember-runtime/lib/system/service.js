@@ -1,6 +1,8 @@
 import EmberObject from './object';
 import { createInjectionHelper } from '../inject';
-
+/**
+ * @module @ember.service
+ */
 
 /**
   Creates a property that lazily looks up a service in the container. There
@@ -9,6 +11,7 @@ import { createInjectionHelper } from '../inject';
   Example:
 
   ```javascript
+  import { inject } from '@ember/service';
   App.ApplicationRoute = Ember.Route.extend({
     authManager: Ember.inject.service('auth'),
 
@@ -22,9 +25,11 @@ import { createInjectionHelper } from '../inject';
   that looks up the `auth` service in the container, making it easily
   accessible in the `model` hook.
 
-  @method service
+  @method inject
+  @for service
+  @namespace @ember
+  @static
   @since 1.10.0
-  @for Ember.inject
   @param {String} name (optional) name of the service to inject, defaults to
          the property's name
   @return {Ember.InjectedProperty} injection descriptor instance
@@ -33,9 +38,10 @@ import { createInjectionHelper } from '../inject';
 createInjectionHelper('service');
 
 /**
-  @class Service
-  @namespace Ember
-  @extends Ember.Object
+  @class service
+  @namespace @ember
+  @constructor
+  @extends @ember.object
   @since 1.10.0
   @public
 */

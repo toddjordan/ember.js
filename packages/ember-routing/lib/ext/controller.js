@@ -3,8 +3,7 @@ import { ControllerMixin } from 'ember-runtime';
 import { prefixRouteNameArg } from '../utils';
 
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 ControllerMixin.reopen({

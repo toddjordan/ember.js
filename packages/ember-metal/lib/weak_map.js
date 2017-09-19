@@ -1,3 +1,6 @@
+/**
+@module @ember.map
+*/
 import { GUID_KEY, HAS_NATIVE_WEAKMAP } from 'ember-utils';
 import {
   peekMeta,
@@ -13,7 +16,8 @@ function isObject(value) {
 }
 
 /*
- * @class Ember.WeakMap
+ * @class weak
+ * @namespace @ember.map
  * @public
  * @category ember-metal-weakmap
  *

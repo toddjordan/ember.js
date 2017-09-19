@@ -1,7 +1,7 @@
 /**
-@module ember
-@submodule ember-testing
+@module @ember.testing
 */
+
 import { RSVP } from 'ember-runtime';
 import Logger from 'ember-console';
 import { assert } from 'ember-debug';

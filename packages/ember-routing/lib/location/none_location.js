@@ -6,8 +6,7 @@ import { assert } from 'ember-debug';
 import { Object as EmberObject } from 'ember-runtime';
 
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 /**
@@ -20,9 +19,9 @@ import { Object as EmberObject } from 'ember-runtime';
   in the actual URL. This is generally used for testing purposes, and is one
   of the changes made when calling `App.setupForTesting()`.
 
-  @class NoneLocation
-  @namespace Ember
-  @extends Ember.Object
+  @class none_location
+  @namespace @ember.routing
+  @extends @ember.object
   @protected
 */
 export default EmberObject.extend({

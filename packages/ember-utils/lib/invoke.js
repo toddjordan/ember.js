@@ -12,7 +12,8 @@ import applyStr from './apply-str';
   ```
 
   @method canInvoke
-  @for Ember
+  @for @ember.utils
+  @static
   @param {Object} obj The object to check for the method
   @param {String} methodName The method name to check for
   @return {Boolean}
@@ -35,7 +36,8 @@ export function canInvoke(obj, methodName) {
   ```
 
   @method tryInvoke
-  @for Ember
+  @for @ember.utils
+  @static
   @param {Object} obj The object to check for the method
   @param {String} methodName The method name to check for
   @param {Array} [args] The arguments to pass to the method

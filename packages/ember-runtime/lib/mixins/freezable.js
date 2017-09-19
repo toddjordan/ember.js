@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.object
 */
 
 import {
@@ -62,8 +61,8 @@ import { deprecate } from 'ember-debug';
   `Ember.Copyable` protocol, which defines a `frozenCopy()` method that will
   return a frozen object, if the object implements this method as well.
 
-  @class Freezable
-  @namespace Ember
+  @class freezable
+  @namespace @ember.object
   @since Ember 0.9
   @deprecated Use `Object.freeze` instead.
   @private

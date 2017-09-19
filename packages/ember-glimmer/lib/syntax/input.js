@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { assert } from 'ember-debug';
 import { wrapComponentClassAttribute } from '../utils/bindings';
@@ -141,7 +140,8 @@ function buildTextFieldSyntax(params, hash, builder) {
   ```
 
   @method input
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
+  @static
   @param {Hash} options
   @public
 */

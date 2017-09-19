@@ -1,6 +1,5 @@
 /**
-  @module ember
-  @submodule ember-runtime
+  @module @ember.object
 */
 
 // using ember-metal/lib/main here to ensure that ember-debug is setup
@@ -196,8 +195,8 @@ function makeCtor() {
 }
 
 /**
-  @class CoreObject
-  @namespace Ember
+  @class core_object
+  @namespace @ember.object
   @public
 */
 let CoreObject = makeCtor();

@@ -24,7 +24,7 @@ export default class TestPromise extends RSVP.Promise {
   This method should be returned by async helpers such as `wait`.
 
   @public
-  @for Ember.Test
+  @for @ember.testing
   @method promise
   @param {Function} resolver The function used to resolve the promise.
   @param {String} label An optional string for identifying the promise.
@@ -40,7 +40,7 @@ export function promise(resolver, label) {
   an instance of `Ember.Test.Promise`
 
   @public
-  @for Ember.Test
+  @for @ember.testing
   @method resolve
   @param {Mixed} The value to resolve
   @since 1.2.0

@@ -1,6 +1,10 @@
 import intern from './intern';
 
 /**
+  @module @ember.object
+*/
+
+/**
  Previously we used `Ember.$.uuid`, however `$.uuid` has been removed from
  jQuery master. We'll just bootstrap our own uuid now.
 
@@ -25,7 +29,8 @@ export function uuid() {
  Prefix used for guids through out Ember.
  @private
  @property GUID_PREFIX
- @for Ember
+ @for @ember.object.internals
+ @static
  @type String
  @final
  */
@@ -45,7 +50,8 @@ const stringCache  = {};
 
   @private
   @property GUID_KEY
-  @for Ember
+  @for @ember.object.internals
+  @static
   @type String
   @final
 */
@@ -77,7 +83,8 @@ export let GUID_KEY_PROPERTY = {
 
   @private
   @method generateGuid
-  @for Ember
+  @for @ember.object.internals
+  @static
   @param {Object} [obj] Object the guid will be used for. If passed in, the guid will
     be saved on the object and reused whenever you pass the same object
     again.
@@ -118,7 +125,8 @@ export function generateGuid(obj, prefix) {
 
   @public
   @method guidFor
-  @for Ember
+  @for @ember.object.internals
+  @static
   @param {Object} obj any object, string, number, Element, or primitive
   @return {String} the unique guid for this instance.
 */

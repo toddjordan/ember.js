@@ -28,7 +28,7 @@ const callbacks = [];
    ```
 
    @public
-   @for Ember.Test
+   @for @ember.testing
    @method registerWaiter
    @param {Object} context (optional)
    @param {Function} callback
@@ -51,7 +51,7 @@ export function registerWaiter(context, callback) {
    registered with `registerWaiter`.
 
    @public
-   @for Ember.Test
+   @for @ember.testing
    @method unregisterWaiter
    @param {Object} context (optional)
    @param {Function} callback
@@ -82,7 +82,7 @@ export function unregisterWaiter(context, callback) {
   infrastructure.
 
   @public
-  @for Ember.Test
+  @for @ember.testing
   @static
   @method checkWaiters
 */

@@ -62,12 +62,13 @@ if (DEBUG) {
 }
 
 /**
-@module ember
-@submodule ember-debug
+@module @ember.debug
 */
 
 /**
-@class Ember
+@class debug
+@static
+@namespace @ember
 @public
 */
 

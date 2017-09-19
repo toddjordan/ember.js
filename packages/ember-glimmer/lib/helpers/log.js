@@ -1,7 +1,6 @@
 import { InternalHelperReference } from '../utils/references';
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 import Logger from 'ember-console';
@@ -15,7 +14,7 @@ import Logger from 'ember-console';
   ```
 
   @method log
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @param {Array} params
   @public
 */

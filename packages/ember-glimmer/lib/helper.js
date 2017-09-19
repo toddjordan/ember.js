@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 
 import { symbol } from 'ember-utils';
@@ -45,7 +44,8 @@ export const RECOMPUTE_TAG = symbol('RECOMPUTE_TAG');
 
   Additionally, class helpers can call `recompute` to force a new computation.
 
-  @class Ember.Helper
+  @class helper
+  @namespace @ember.component
   @public
   @since 1.13.0
 */

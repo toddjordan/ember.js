@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-runtime
+@module @ember.array
 */
 
 
@@ -52,9 +51,9 @@ export function removeAt(array, start, len) {
   For example, one might implement a SparseArray that cannot be directly
   modified, but if its underlying enumerable changes, it will change also.
 
-  @class MutableArray
-  @namespace Ember
-  @uses Ember.Array
+  @class mutable
+  @namespace @ember.array
+  @uses @ember.array
   @uses Ember.MutableEnumerable
   @public
 */

@@ -59,19 +59,18 @@ export function hasDefaultSerialize(route) {
 }
 
 /**
-@module ember
-@submodule ember-routing
+@module @ember.routing
 */
 
 /**
   The `Ember.Route` class is used to define individual routes. Refer to
   the [routing guide](https://emberjs.com/guides/routing/) for documentation.
 
-  @class Route
-  @namespace Ember
-  @extends Ember.Object
-  @uses Ember.ActionHandler
-  @uses Ember.Evented
+  @class route
+  @namespace @ember.routing
+  @extends @ember.object
+  @uses @ember.object.action_handler
+  @uses @ember.object.evented
   @since 1.0.0
   @public
 */
@@ -114,7 +113,7 @@ let Route = EmberObject.extend(ActionHandler, Evented, {
     ```
 
     @property queryParams
-    @for Ember.Route
+    @for route
     @type Object
     @since 1.6.0
     @public
@@ -128,7 +127,7 @@ let Route = EmberObject.extend(ActionHandler, Evented, {
     a `routeName` of `posts.post`.
 
     @property routeName
-    @for Ember.Route
+    @for route
     @type String
     @since 1.0.0
     @public
@@ -2120,7 +2119,7 @@ let Route = EmberObject.extend(ActionHandler, Evented, {
       }
     });
 	```
-	
+
     @method disconnectOutlet
     @param {Object|String} options the options hash or outlet name
     @since 1.0.0

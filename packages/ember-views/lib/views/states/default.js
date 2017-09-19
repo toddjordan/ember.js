@@ -3,8 +3,7 @@ import {
 } from 'ember-debug';
 
 /**
-@module ember
-@submodule ember-views
+@module @ember.component
 */
 export default {
   // appendChild is only legal while rendering the buffer.

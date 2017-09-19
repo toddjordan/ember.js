@@ -19,6 +19,10 @@ const TYPE_MAP = {
 const { toString } = Object.prototype;
 
 /**
+ @module @ember.utils
+ */
+
+/**
   Returns true if the passed object is an array or Array-like.
 
   Objects are considered Array-like if any of the following are true:
@@ -37,7 +41,9 @@ const { toString } = Object.prototype;
   ```
 
   @method isArray
-  @for Ember
+  @static
+  @namespace @ember
+  @for array
   @param {Object} obj The object to test
   @return {Boolean} true if the passed object is an array or Array-like
   @public
@@ -104,7 +110,9 @@ export function isArray(obj) {
   ```
 
   @method typeOf
-  @for Ember
+  @static
+  @namespace @ember
+  @for utils
   @param {Object} item the item to check
   @return {String} the type
   @public

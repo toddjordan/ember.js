@@ -2,8 +2,7 @@ import { assign } from 'ember-utils';
 import { Error as EmberError } from 'ember-debug';
 import _default from './default';
 /**
-@module ember
-@submodule ember-views
+@module @ember.component
 */
 
 const destroying = Object.create(_default);

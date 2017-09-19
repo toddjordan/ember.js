@@ -1,6 +1,5 @@
 /**
-@module ember
-@submodule ember-glimmer
+@module @ember.component
 */
 import { symbol } from 'ember-utils';
 
@@ -76,7 +75,7 @@ import { symbol } from 'ember-utils';
   ```
 
   @method each
-  @for Ember.Templates.helpers
+  @for @ember.templates.helpers
   @public
  */
 
@@ -106,7 +105,8 @@ import { symbol } from 'ember-utils';
   Outputting their name and age.
 
   @method each-in
-  @for Ember.Templates.helpers
+  @static
+  @for @ember.templates.helpers
   @public
   @since 2.1.0
 */
